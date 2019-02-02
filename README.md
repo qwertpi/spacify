@@ -1,7 +1,7 @@
 # spacify
-This program takes text and attempts to add spaces to it. The list of valid words is sourced from [here](https://github.com/dwyl/english-words/blob/master/words_alpha.txt) but contains lots of archaic and obscure words so removing these is an ongoing effort, help with this would be very much appreciated. 
+This program takes text and attempts to add spaces to it. The list of valid words is sourced from [here](https://github.com/dwyl/english-words/blob/master/words_alpha.txt) but contains lots of archaic and obscure words so removing these is an ongoing effort, help with this would be very much appreciated. The inclusion of all the letters of the alphabet on their own in words_alpha.txt is NOT a bug, without this the code would get "stuck" if there were no words that matched part of the text which is the only time at which a single letter will be outputted.
 
-In essence the code builds up the longest word it can starting from the first character in the unspaced text, removes this word from the unspaced text and then repeats until all words have been extracted from the unspaced text. The inclusion of all the letters of the alphabet on their own in words_alpha.txt is NOT a bug, without this the code would get "stuck" if there were no words that matched part of the text which is the only time at which a single letter will be outputted.
+In essence the code builds up the longest word it can starting from the first character in the unspaced text, removes this word from the unspaced text and then repeats until all words have been extracted from the unspaced text. 
 
 Feedback and pull requests (particularly those removing words) are very welcome
 
