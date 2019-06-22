@@ -1,3 +1,6 @@
+.
+,
+!
 a
 aa
 aaa
@@ -2403,6 +2406,7 @@ amusement
 amusementpark
 amusementtax
 amusing
+amy
 amygdala
 amygdalate
 amygdalin
@@ -19557,19 +19561,6 @@ dixieland
 dizen
 dizzy
 dj
-djakarta
-djambi
-djebel
-djerba
-djokjakarta
-dk
-dkl
-dl
-dlr
-dlvy
-dm
-dmso
-dmz
 dna
 dneprodzerzhinsk
 dnepropetrovsk
@@ -23686,8 +23677,8 @@ fabrication
 fabrikoid
 fabulist
 fabulous
-fac
 face
+facebook
 facecard
 faceharden
 faceless
@@ -30495,6 +30486,7 @@ hatching
 hatchment
 hatchway
 hate
+hated
 hateful
 hatfield
 hath
@@ -38996,6 +38988,7 @@ liguria
 ligurian
 likable
 like
+liked
 likelihood
 likely
 likeminded
@@ -42088,6 +42081,7 @@ mesozoic
 mesquite
 mess
 message
+messages
 messalina
 messaline
 messapian
@@ -58704,7 +58698,6 @@ shetlandsheepdog
 shetlandwool
 sheugh
 shevat
-shew
 shf
 shiah
 shibboleth
@@ -70213,10 +70206,7 @@ waistline
 wait
 waitabit
 waiter
-waitinggame
-waitinglist
-waitingroom
-waiton
+waiting
 waitress
 waitup
 waive
