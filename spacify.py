@@ -3,10 +3,10 @@ import re
 print("Loading")
 #load all the words in from the text file
 #splitlines instead of readlines as splitlines removes newline chars
-words=open("words_alpha.txt","r").read().splitlines()
+words=open("words.txt","r").read().splitlines()
 #gets the text to be spaced removes any existing spaces and makes it all lower case
 text=input("    ").replace(" ","").lower()
-#strips characters that aren't a-z commas full stops exclemation marks or question marksfrom the text
+#strips characters that aren't a-z commas full stops exclemation marks or question marks from the text
 text=re.sub("[^.,!a-zA-Z]","",text)
 
 spaced_text=""
