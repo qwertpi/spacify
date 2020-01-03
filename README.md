@@ -7,7 +7,7 @@ Feedback and pull requests (particularly those removing or adding words) are ver
 
 
 ## Copyright
-Copyright © 2019  Rory Sharp All rights reserved.
+Copyright © 2019-20  Rory Sharp All rights reserved.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
