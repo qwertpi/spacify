@@ -1,7 +1,7 @@
 # spacify
-This program takes text and attempts to add spaces to it. The list of valid words is the common words from [Molby Words 2](https://en.wikipedia.org/wiki/Moby_Project#Words) sourced from [here](https://www.gutenberg.org/files/3201/files/COMMON.TXT) but lacks some words and contains some archaic and obscure words so modifying it is an ongoing effort, help with this would be very much appreciated. The inclusion of all the letters of the alphabet on their own in words.txt is NOT a bug, without this the code would get "stuck" if there were no words that matched part of the text which is the only time at which a single letter will be outputted.
+This program takes text and attempts to add spaces to it in order to form words. The word list included is the common words from [Molby Words 2](https://en.wikipedia.org/wiki/Moby_Project#Words) sourced from [here](https://www.gutenberg.org/files/3201/files/COMMON.TXT) but lacks some words and contains some archaic and obscure words so modifying it is an ongoing effort, help with this would be very much appreciated.
 
-In essence the code builds up the longest word it can starting from the first character in the unspaced text, removes this word from the unspaced text and then repeats until all words have been extracted from the unspaced text. 
+In essence the main algorithm used builds up the longest word it can using consective letters from the text starting from the first letter in the text, removes this word from the unspaced text and then repeats until all words have been extracted from the unspaced text. 
 
 Feedback and pull requests (particularly those removing or adding words) are very welcome
 
@@ -21,5 +21,8 @@ For a summary of the licence go to https://tldrlegal.com/license/gnu-general-pub
 
 
 ## Use 
-1\. Run the code and enter the text you wish to have spacified. This text may contain spaces however these will be removed as part of text preprocessing.
-2\. If any words are used for spacing that are incorrect and are likely to never be correct, remove them from words_alpha.txt and then re-run the program
+-1\. Clone the repo  
+0\. (Optional) Create a file called input.txt and put your text in it  
+1\. (Optional) Replace words.txt with your own word file of the same name if you have when which would be better suited to your text  
+2\. Run the code and if you didn't create the input.txt file enter the text you wish to have spacified. This text may contain spaces however these will be removed as part of text preprocessing.  
+3\. If any words are used for spacing that are incorrect and are likely to never be correct, remove them from words.txt, re-run the program, and then create a PR with your modified words.txt  
