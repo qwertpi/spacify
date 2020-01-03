@@ -3,12 +3,14 @@ import string
 
 #splitlines instead of readlines as splitlines removes newline chars
 #all printable charcters are added to prevent the code from getting stuck if no words exist
-words = open("words.txt","r").read().splitlines() + list(string.printable)
+with open("words.txt", "r") as f:
+    words = f.read().splitlines() + list(string.printable)
 
 try:
     #loads from file
     #merges onto one line
-    inp = "".join(open("input.txt").read().splitlines())
+    with open("input.txt", "r") as f:
+        inp = "".join(f.read().splitlines())
 #unless no files exist
 except FileNotFoundError:
     #in which case loads from input
@@ -62,7 +64,8 @@ def possible_words(string, words):
 
 #respects the word bounadries created by the rules
 for word in inp.split(" "):
-    while len(word) != 0:
+    #bool(list) is equal to False when the list is empty
+    while bool(word) != False:
         for char in word:
             word_segment += char.lower()
             #if no words start with the word segment
