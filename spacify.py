@@ -17,7 +17,12 @@ except FileNotFoundError:
     inp = input(">  ")
 
 #removes all characters from input that aren't letters, or certain punctuation
-banned_chars = "".join(list(set(string.printable) - set(string.ascii_letters) - set([",", "!", ".", "?", "-"])))
+#change depending on whether spaces in the input should preserved
+ignore_spaces = False
+if ignore_spaces:
+    banned_chars = "".join(list(set(string.printable) - set(string.ascii_letters) - set([",", "!", ".", "?", "-"])))
+else:
+    banned_chars = "".join(list(set(string.printable) - set(string.ascii_letters) - set([",", "!", ".", "?", "-", " "])))
 for char in banned_chars:
     inp = inp.replace(char, "")    
 
@@ -69,7 +74,7 @@ for word in inp.split(" "):
         for char in word:
             word_segment += char.lower()
             #if no words start with the word segment
-            if not possible_words:
+            if not possible_words(word_segment, words):
                 #we've already found the longest possible word so breaks out of the for char loop
                 break
             #if word_segment is a word
@@ -109,4 +114,4 @@ for char in inp:
 print(out)
 #also sticks it in a text file for increased conveinece
 with open("out.txt", "w") as f:
-    f.write(out)
+    f.write(out) 
