@@ -19880,8 +19880,6 @@ dotage
 dotard
 dotation
 dote
-doth
-doting
 dotproduct
 dotted
 dotterel
@@ -25816,6 +25814,7 @@ forebode
 foreboding
 forebrain
 forecast
+forecasts
 forecastle
 foreclose
 foreclosure
@@ -33008,9 +33007,6 @@ hysteronproteron
 hysterotomy
 hz
 i
-ia
-iaea
-ial
 iamb
 iambic
 iambus
